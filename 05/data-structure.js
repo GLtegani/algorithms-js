@@ -4,14 +4,20 @@
   Após capturar os 10 itens, imprima-os, separando por vírgula.
 */
 
-let itemsArray = [];
+// utilizar funções é bem útil para reutilização de código
 
-for(let items = 0; items < 10; items++) {
+function test() {
+  let itemsArray = [];
+
+  for(let items = 0; items < 10; items++) {
   
-  let itemsName = prompt(`Me diga o item ${items + 1}`);
+    let itemsName = prompt(`Me diga o item ${items + 1}`);
 
-  itemsArray[items] = itemsName;
+    itemsArray[items] = itemsName;
 
+  };
+
+  alert(itemsArray);
 };
 
-alert(itemsArray);
+test();
