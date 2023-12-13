@@ -45,7 +45,7 @@ function patientIMC(patient) {
   } else {
     return `Paciente ${patient.name} pesa ${patient.weight}kg e tem ${patient.height} de altura.
     Possui o IMC de ${imcCalc}, está com obesidade`;
-  }
+  };
 
   
 };
