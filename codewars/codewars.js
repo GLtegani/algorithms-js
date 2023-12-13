@@ -28,40 +28,26 @@ function rentalCarCost(d) {
 console.log(rentalCarCost());
 
 
-/* 
-  Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 
-*/
+// Começar a utilizar mais ternários
 
-/*
-  O  split só pode ser utilizado em tipo String
-*/
+// Pela segunda vez com ternário, use mais!
 
-// let array = [];
+function boolToWord(bool){
+  return bool ? 'Yes' : 'No';
+};
 
-// function digitize(n) {
-//   return String(n).split('').map(Number).reverse()
+
+
+// Resposta resolvida pela primeira vez
+
+// function boolToWord(bool){
+//   if(bool == true) {
+//     return 'Yes';
+//   } else {
+//     return 'No';
+//   };
 // };
 
-// console.log(digitize(62345));
 
-
-/* 
-  Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
-
-  For example (Input -> Output):
-
-  2 -> 3 (1 + 2)
-  8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
-*/
-// function sum (num) {
-
-//   let result = 0
-//   for(let i = 1; i <= num; i++) {
-//     result += i;
-//   } 
-
-//   return result;
-// }
-
-// console.log(sum(10));
