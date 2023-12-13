@@ -16,7 +16,7 @@
 */
 
 function guessingGame() {
-  let userAnswer = prompt('Adivinhe o número que estou pensando? Está entre 0 e 10.');
+  let userAnswer = Number(prompt('Adivinhe o número que estou pensando? Está entre 0 e 10.'));
   const randomNumber = Math.round(Math.random() * 10);
   let attempts = 1;
 
@@ -24,7 +24,7 @@ function guessingGame() {
 
   // O while é útil quando se trata de uma situação que precisa ser cumprida para que o loop acabe,
   // sendo infinito caso ele nao acabe, diferente do for que você define quando ele acaba.
-  while(Number(userAnswer) != randomNumber) {
+  while(userAnswer != randomNumber) {
     userAnswer = prompt('Erro, tente novamente:');
     attempts++;
   };
