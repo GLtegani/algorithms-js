@@ -15,17 +15,13 @@
 function computeAverage() {
   
   let studentName = prompt('Olá, me diga seu nome.');
-  let gradeOne = prompt('Me diga sua primeira nota do bimestre.');
-  let gradeTwo = prompt('Me diga sua segunda nota do bimestre.');
-  let gradeThree = prompt('Me diga sua terceira nota do bimestre.');
+  let gradeOne = Number(prompt('Me diga sua primeira nota do bimestre.'));
+  let gradeTwo = Number(prompt('Me diga sua segunda nota do bimestre.'));
+  let gradeThree = Number(prompt('Me diga sua terceira nota do bimestre.'));
 
-  gradeOne = Number(gradeOne);
-  gradeTwo = Number(gradeTwo);
-  gradeThree = Number(gradeThree);
 
-  let average = (gradeOne + gradeTwo + gradeThree) / 3;
+  const average = ((gradeOne + gradeTwo + gradeThree) / 3).toFixed(2);
   
-  average = average.toFixed(2);
   
 
   if(average >= 6) {

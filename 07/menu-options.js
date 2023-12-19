@@ -17,11 +17,12 @@
   
 */
 
-let username = prompt('Olá, me diga seu nome.');
-let userOption;
-let list = [];
 
 function program() {
+  
+  let username = prompt('Olá, me diga seu nome.');
+  let userOption;
+  let list = [];
   
   while(userOption != 3) {
 
@@ -54,6 +55,7 @@ function program() {
         break;
       default:
         alert('Essa opção não existe, tente novamente.');
+        break;
     }
   
   }
